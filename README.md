@@ -44,12 +44,8 @@
 - 使用自己的域名穿透+启动指定隧道：
   ngrok.exe -config=ngrok.conf -hostname 自己的域名(xxx.xxx.xxx) start 隧道名称
 
-成功穿透后启动ngrok的shell窗口内会有"
-
-<font color=#008000 >online</font>
-
-"字样
-下面有映射在**外网**的域名 就是那个“**xxx.vaiwan.com**”
+成功穿透后启动ngrok的shell窗口内会有<font color=#7FFFD4 size=3>online</font>字样
+下面有映射在**外网**的域名 就是那个**xxx.vaiwan.com**
 *(://前面标的是协议)*
 
 ## Q&A
