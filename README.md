@@ -1,6 +1,6 @@
 # Fast-Ngrok  ~~穿透，超速了。~~
 
-[Linux/MacOS用户点我](https://github.com/coder-yunyi/fast-ngrok/README_linux.md)
+[Linux/MacOS用户点我](https://github.com/coder-yunyi/fast-ngrok/blob/main/README_linux.md)
 
 **所有支持平台版本的ngrok都在bin文件夹里，请对号入座**
 
