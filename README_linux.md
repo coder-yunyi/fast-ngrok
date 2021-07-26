@@ -50,17 +50,20 @@
 
 <details>
     <summary>Ngrok安全吗？</summary>
+    <br/>
     <p>如果您怀疑fast-ngrok项目内的ngrok.exe有后门，请自行检查src文件夹内的源码，没有进行任何代码混淆，如果仍然有疑虑请自行编译</p>
     <a href="https://github.com/inconshreveable/ngrok">点我查看ngrok1.7开放源代码本尊</a>
 </details>
 <details>
     <summary>穿透后无法正常访问？</summary>
+    <br/>
     <p>1.可能是您的子域名被占用了，请更换子域名(使用自定义域名的请检查解析)</p>
     <p>2.检查您映射的协议和端口</p>
     <p>3.使用自定义域名的请先<strong>在工信部备案</strong>！！！(映射服务器使用阿里云国内线路服务器，所以要备案)</p>
 </details>
 <details>
     <summary>Fast-ngrok有什么限制？</summary>
+    <br/>
     <p>正常使用的情况下，Fast-ngrok不对用户的流量/带宽/会话时间/子域名/映射端口数作任何限制</p>
     <strong>但以下情况例外:</strong>
     <p>1. 3小时内单ip任意隧道上/下行带宽总计超过2GB，将对此ip所有隧道上/下行带宽限制为2Mbps，持续48小时</p>
