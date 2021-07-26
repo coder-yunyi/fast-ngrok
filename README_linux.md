@@ -1,14 +1,12 @@
 # Fast-Ngrok  ~~穿透，超速了。~~
 
-[Linux/MacOS用户点我](https://github.com/coder-yunyi/fast-ngrok/README_linux.md)
+[Windows用户点我](https://github.com/coder-yunyi/fast-ngrok/README.md)
 
 **所有支持平台版本的ngrok都在bin文件夹里，请对号入座**
 
-**请按本README文件使用ngrok，不要双击ngrok.exe**
+- 启动ngrok：cd ./ngrok所在路径
 
-- 启动ngrok：cd ngrok.exe所在路径
-
-- 启动指定隧道：ngrok.exe -config ngrok.conf start 隧道名称
+- 启动指定隧道：./ngrok -config ngrok.conf start 隧道名称
 
 - 配置自定隧道：
   配置保存在ngrok.conf中
@@ -32,17 +30,17 @@
   
 - 穿透指定端口+指定二级域名：
 
-  ngrok.exe -config=ngrok.conf -subdomain 子域名 映射到本地的端口
+  ./ngrok.exe -config=ngrok.conf -subdomain 子域名 映射到本地的端口
 
 - 穿透指定端口+启动指定隧道：
 
-  ngrok.exe -config=ngrok.conf -subdomain 子域名 start 隧道名称
+  ./ngrok -config=ngrok.conf -subdomain 子域名 start 隧道名称
 
 - 使用自己的域名穿透+穿透指定端口：
-  ngrok.exe -config=ngrok.conf -hostname 自己的域名(xxx.xxx.xxx) 映射到本地的端口
+  ./ngrok.exe -config=ngrok.conf -hostname 自己的域名(xxx.xxx.xxx) 映射到本地的端口
 
 - 使用自己的域名穿透+启动指定隧道：
-  ngrok.exe -config=ngrok.conf -hostname 自己的域名(xxx.xxx.xxx) start 隧道名称
+  ./ngrok.exe -config=ngrok.conf -hostname 自己的域名(xxx.xxx.xxx) start 隧道名称
 
 成功穿透后启动ngrok的shell窗口内会有"<font color=#008000 >online</font>"字样
 下面有映射在**外网**的域名 就是那个“**xxx.vaiwan.com**”
@@ -51,13 +49,10 @@
 ## Q&A
 
 <details>
-    <summary>Ngrok报毒怎么办？Ngrok安全吗？</summary>
-    <strong>！！！使用Ngrok前先将ngrok.exe添加到杀毒软件的信任区里(白名单)，本程序没有任何后门！！！</strong>
+    <summary>Ngrok安全吗？</summary>
     <p>如果您怀疑fast-ngrok项目内的ngrok.exe有后门，请自行检查src文件夹内的源码，没有进行任何代码混淆，如果仍然有疑虑请自行编译</p>
     <a href="https://github.com/inconshreveable/ngrok">点我查看ngrok1.7开放源代码本尊</a>
 </details>
-
-
 <details>
     <summary>穿透后无法正常访问？</summary>
     <p>1.可能是您的子域名被占用了，请更换子域名(使用自定义域名的请检查解析)</p>
